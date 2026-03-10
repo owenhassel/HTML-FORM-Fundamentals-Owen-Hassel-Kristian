@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 20px;
+            }
+
+            td {
+                padding: 8px;
+                vertical-align: top;
+            }
+
+            input, select, textarea {
+                width: 100%;
+                padding: 6px;
+                box-sizing: border-box;
+            }
+
+            p {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 20px;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+
+            .btn {
+                display: block;
+                margin: 20px auto;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">Employee Details</h2>
+
+        <p>01. Personal Information</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="fname">Employee Name</label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                </td>
+
+                <td>
+                    <label for="lname">Last Name</label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="start_date">Starting Date</label><br>
+                    <input type="date" id="start_date" name="start_date">
+                </td>
+
+                <td>
+                    <label for="birth_date">Date of Birth</label><br>
+                    <input type="date" id="birth_date" name="birth_date">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="emp_type">Employee Type</label><br>
+                    <select id="emp_type" name="emp_type">
+                        <option value="" disabled selected>Select</option>
+                        <option value="full_time">Full Time</option>
+                        <option value="part_time">Part Time</option>
+                    </select>
+                </td>
+
+                <td>
+                    <label for="gender">Gender</label><br>
+                    <div style="display: flex; gap: 10px; align-items: center;">
+                        <input type="radio" id="male" name="gender" value="male">
+                        <label for="male">Male</label>
+
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </td>
+
+                <tr>
+                    <td>
+                        <label for="position">Position</label>
+                        <input type="text" id="position" name="position" placeholder="Position">
+                    </td>
+                </tr>
+        </table>
+        
+        <p>02. Location</p>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="city">City</label><br>
+                    <input type="text" id="city" name="city" placeholder="City">
+                </td>
+
+                <td>
+                    <label for="state">State</label><br>
+                    <input type="text" id="state" name="state" placeholder="State">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="zip">ZIP</label><br>
+                    <input type="text" id="zip" name="zip" placeholder="ZIP">
+                </td>
+                <td>
+                    <label for="address">Address</label><br>
+                    <textarea id="address" name="address" placeholder="Address" rows="10"></textarea>
+                </td>
+            </tr>
+        </table>
+
+        <p>03. Contact Information</p>
+        <table>
+            <tr>
+                <td>
+                    <label for="phone">Phone</label><br>
+                    <input type="tel" id="phone" name="phone" placeholder="Phone">
+                </td>
+                <td>
+                    <label for="email">Email</label><br>
+                    <input type="email" id="email" name="email" placeholder="Email">
+                </td>
+            </tr>
+        </table>
+            <input type="submit" value="Register" style="width: 100px" class="btn">
+    </body>
+</html>

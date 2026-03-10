@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table {
+                width: 50%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            td {
+                padding: 8px;
+            }
+            input, select {
+                width: 100%;
+                padding: 6px;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h2 style="text-align: center;">Create Account</h2>
+
+        <table>
+            <tr>
+                <td>
+                    <label for="fname"></label><br>
+                    <input type="text" id="fname" name="fname" placeholder="First Name">
+                </td>
+
+                <td>
+                    <label for="lname"></label><br>
+                    <input type="text" id="lname" name="lname" placeholder="Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <select id="country" name="country">
+                        <option value="" disabled selected>Country</option>
+                        <option value="indonesia">Indonesia</option>
+                        <option value="japan">Japan</option>
+                        <option value="south korea">South Korea</option>
+                        <option value="china">China</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="email"></label><br>
+                    <input type="email" id="email" name="email" placeholder="Email"">
+                </td>
+
+                <td>
+                    <label for="phone"></label><br>
+                    <input type="phone" name="phone" id="phone" placeholder="Phone Number">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="pwd"></label><br>
+                    <input type="password" id="pwd" name="pwd" placeholder="Password">
+                </td>
+
+                <td>
+                    <label for="confirm_pwd"></label><br>
+                    <input type="password" id="confirm_pwd" name="confirm_pwd" placeholder="Confirm Password">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" id="terms" name="terms" style="width: auto;">
+                    <label for="terms">Terms and Conditions</label>
+                </td>
+            </tr>
+
+            <tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;">
+                        <input type="submit" value="Create" style="width: 50%;">
+                    </td>
+                </tr>
+            </tr>
+        </table>
+
+    </body>
+</html>
